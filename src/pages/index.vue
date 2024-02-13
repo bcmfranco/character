@@ -3,17 +3,17 @@
 
 
     <div id="character">
-      <div id="top"></div>
+      <div id="top" class="skin_1"></div>
       <div id="medium">
-        <div id="breast"></div>
-        <div id="sleeve"></div>
-        <div id="hand"></div>
+        <div id="breast" class="shirt_tecnopink"></div>
+        <div id="sleeve" class="shirt_tecnopink"></div>
+        <div id="hand" class="skin_1"></div>
       </div>
       <div id="bottom">
-        <div id="short"></div>
+        <div id="short" class="gray_short"></div>
         <div id="legs">
-          <div class="leg"></div>
-          <div class="leg"></div>
+          <div class="leg skin_1"></div>
+          <div class="leg skin_1"></div>
         </div>
       </div>
 
@@ -77,6 +77,10 @@ export default {
   width: 200px;
 }
 
+#hand{
+  width: 50px;
+}
+
 #sleeve{
   height: 100%;
   width: 50px;
@@ -103,6 +107,24 @@ export default {
   height: 50px;
   width: 100px;
   border-left: 1px solid black;
+  border-bottom: 3px solid black;
+}
+
+.blue_shirt{
+  background-color: rgb(60, 75, 109);
+}
+
+.gray_short{
+  background-color: lightgray;
+}
+
+.skin_1{
+  background-color: #ffdbac;
+}
+
+.shirt_tecnopink{
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
 
 @media only screen and (max-width: 480px) {
