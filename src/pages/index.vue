@@ -3,15 +3,18 @@
 
 
     <div id="character">
-      <div id="head"></div>
-      <div id="torso">
+      <div id="top"></div>
+      <div id="medium">
         <div id="breast"></div>
         <div id="sleeve"></div>
         <div id="hand"></div>
       </div>
-      <div id="legs">
-        <div class="leg"></div>
-        <div class="leg"></div>
+      <div id="bottom">
+        <div id="short"></div>
+        <div id="legs">
+          <div class="leg"></div>
+          <div class="leg"></div>
+        </div>
       </div>
 
     </div>
@@ -56,12 +59,12 @@ export default {
   width: 200px;
 }
 
-#head{
+#top{
   border-bottom: 1px solid black;
   height: 100px;
 }
 
-#torso{
+#medium{
   border: 3px solid black;
   height: 100px;
   width: 300px;
@@ -80,13 +83,24 @@ export default {
   border-right: 1px solid black;
 }
 
+#bottom{
+  display: flex;
+  flex-direction: column;
+}
+
+#short{
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid black;
+}
+
 #legs{
   display: flex;
   flex-direction: row;
 }
 
 .leg{
-  height: 100px;
+  height: 50px;
   width: 100px;
   border-left: 1px solid black;
 }
